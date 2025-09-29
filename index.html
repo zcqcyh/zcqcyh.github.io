@@ -1,755 +1,923 @@
-<!DOCTYPE HTML>
-<html lang="zh">
-
-
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="轮胎维修，换机油，紧急救援">
-    <meta name="description" content="众驰汽车养护——专业呵护，让每一程都更安心">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>众驰汽车养护中心</title>
-    <link rel="icon" type="image/png" href="/medias/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-
-
-   <style>
-    body{
-       background-image: url(https://zcqcyh.github.io/source/img/1.webp);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/favicon.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">众驰汽车养护中心</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>About</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/favicon.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">众驰汽车养护中心</div>
-        <div class="logo-desc">
-            
-            众驰汽车养护——专业呵护，让每一程都更安心
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			About
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                欢迎惠顾
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#articles" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>Start
-                </a>
-
-                
-            </div>
-            <div class="cover-social-link">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        </div>
-    </div>
-
-    
-</div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拉萨市众驰汽车养护中心 - 专业呵护，让每一程都更安心</title>
+    <meta name="description" content="众驰汽车养护中心提供专业的轮胎维修、免费换机油、更换电瓶、紧急救援等汽车服务，让您的爱车得到专业呵护。">
+    <meta name="keywords" content="轮胎维修,免费换机油,更换电瓶,紧急救援,拉萨汽车保养,众驰汽车养护">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <style>
+        :root {
+            --primary-color: #1a2b4c; /* 深蓝 */
+            --secondary-color: #e67e22; /* 橙色 */
+            --accent-color: #e74c3c; /* 红色 */
+            --light-color: #f5f7fa;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --text-light: #fff;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            --transition: all 0.3s ease;
         }
 
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
+        html {
+            scroll-behavior: smooth;
+        }
 
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
+        body {
+            background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
+        /* 导航栏样式 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            background: var(--glass-bg);
+            border-bottom: 1px solid var(--glass-border);
+        }
 
+        header.scrolled {
+            background: rgba(26, 43, 76, 0.9);
+            box-shadow: var(--shadow);
+        }
 
+        .logo {
+            display: flex;
+            align-items: center;
+        }
 
-<main class="content">
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
 
-    
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;诗词
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            南风一扫胡尘静，西入长安到日边
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover {
+            background: var(--secondary-color);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        /* 主内容区域 */
+        main {
+            margin-top: 80px;
+        }
+
+        section {
+            padding: 5rem 10%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* 首页样式 */
+        .hero {
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231a2b4c" width="1200" height="800"/><path fill="%232c3e50" d="M0,0 L1200,800 L0,800 Z"/></svg>') no-repeat center center/cover;
+            z-index: -1;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4);
+        }
+
+        .cta-button:hover {
+            background: var(--accent-color);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(230, 126, 34, 0.6);
+        }
+
+        /* 幻灯片样式 */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            margin: 2rem 0;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide video, .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            color: var(--text-light);
+        }
+
+        /* 服务项目样式 */
+        .services {
+            background: var(--light-color);
+            color: var(--text-color);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--text-light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-icon {
+            background: var(--primary-color);
+            color: var(--text-light);
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-content h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* 地图样式 */
+        .map-container {
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .navigation-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--secondary-color);
+            color: var(--text-light);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .navigation-button:hover {
+            background: var(--accent-color);
+        }
+
+        /* 知识分享样式 */
+        .knowledge {
+            background: var(--light-color);
+            color: var(--text-color);
+        }
+
+        .knowledge-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .knowledge-card {
+            background: var(--text-light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .knowledge-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .knowledge-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .knowledge-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .knowledge-card:hover .knowledge-image img {
+            transform: scale(1.1);
+        }
+
+        .knowledge-content {
+            padding: 1.5rem;
+        }
+
+        .knowledge-content h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* 统计样式 */
+        .stats {
+            text-align: center;
+            padding: 3rem 10%;
+            background: var(--dark-color);
+        }
+
+        .stats p {
+            font-size: 1.2rem;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background: var(--primary-color);
+            padding: 3rem 10%;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* 公告弹窗 */
+        .announcement-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 500px;
+            background: var(--text-light);
+            color: var(--text-color);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            z-index: 2000;
+            display: none;
+        }
+
+        .announcement-modal.active {
+            display: block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-color);
+        }
+
+        /* 悬浮按钮 */
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .floating-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--secondary-color);
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+        }
+
+        .floating-button:hover {
+            background: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .wechat-modal {
+            position: absolute;
+            bottom: 60px;
+            right: 0;
+            background: var(--text-light);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        .wechat-modal img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .wechat-modal.active {
+            display: block;
+        }
+
+        /* 动画效果 */
+        @keyframes float {
+            0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+            50% { transform: translate(-50%, -50%) translateY(-10px); }
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .knowledge-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--primary-color);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                transition: var(--transition);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 1.5rem 0;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            section {
+                padding: 3rem 5%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .slider-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header id="header">
+        <div class="logo">
+            <img src="/img/logo.png" alt="拉萨市众驰汽车养护中心">
+            <h1>众驰汽车养护</h1>
         </div>
-    </div>
-</div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#services">服务项目</a></li>
+            <li><a href="#location">店铺位置</a></li>
+            <li><a href="#knowledge">养护知识</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
 
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
+    <!-- 主内容区域 -->
+    <main>
+        <!-- 首页 -->
+        <section id="home" class="hero">
+            <h2>拉萨市众驰汽车养护中心</h2>
+            <p>众驰汽车养护——专业呵护，让每一程都更安心</p>
+            <a href="tel:+8613638998446" class="cta-button">立即咨询</a>
+            
+            <!-- 幻灯片 -->
+            <div class="slider-container">
+                <div class="slide active">
+                    <video autoplay muted loop>
+                        <source src="/img/1.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                    <div class="slide-content">
+                        <h3>专业团队，精湛技术</h3>
+                        <p>我们拥有经验丰富的技师团队，为您提供最专业的汽车养护服务</p>
                     </div>
-                    
+                </div>
+                <div class="slide">
+                    <img src="/img/img1.jpg" alt="店铺环境">
+                    <div class="slide-content">
+                        <h3>现代化设备，高效服务</h3>
+                        <p>采用先进设备，确保每一辆车的维修质量</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/img2.jpg" alt="服务项目">
+                    <div class="slide-content">
+                        <h3>全方位服务，贴心呵护</h3>
+                        <p>从日常保养到紧急救援，我们提供一站式汽车养护解决方案</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
+        </section>
 
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2025/08/16/hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-08-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Madman
-                                
-                            </span>
-                        </div>
+        <!-- 服务项目 -->
+        <section id="services" class="services">
+            <h2 class="section-title">我们的服务</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
                     </div>
-
-                    
+                    <div class="service-content">
+                        <h3>轮胎维修与更换</h3>
+                        <p>专业轮胎检测、补胎、换胎服务，确保您的行车安全</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>免费换机油</h3>
+                        <p>定期更换机油，延长发动机寿命，提升车辆性能</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>电瓶检测与更换</h3>
+                        <p>专业电瓶检测，及时更换老化电瓶，避免车辆无法启动</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>24小时紧急救援</h3>
+                        <p>全天候道路救援服务，随时解决您的行车困扰</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>常规保养</h3>
+                        <p>定期保养检查，预防潜在问题，确保车辆最佳状态</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>汽车美容</h3>
+                        <p>专业洗车、打蜡、内饰清洁，让您的爱车焕然一新</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2025/08/12/%E6%B1%BD%E8%BD%A6%E4%BF%9D%E5%85%BB%E5%B8%B8%E8%AF%86%E5%A4%A7%E5%85%A8-1/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="汽车保养常识大全">
-                            
-                            <span class="card-title">汽车保养常识大全</span>
-                        </div>
-                    </a>
+        </section>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、日常检查维护（每日&#x2F;每周）1. 油液检查
-机油：冷车状态下抽出油尺，油位应在MIN-MAX之间，颜色呈琥珀色为正常，发黑需更换
+        <!-- 店铺位置 -->
+        <section id="location">
+            <h2 class="section-title">店铺位置</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">拉萨市城关区加荣路朗赛一期一区铺面</p>
+            <div class="map-container">
+                <div id="map" ></div>
+                <button class="navigation-button" id="nav-button">导航到店</button>
+            </div>
+        </section>
 
-冷却液：储液罐液面保持MAX线下方1cm，颜色浑浊需整体更换
-
-刹车油：观察壶体刻度，含水量超过
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-08-12
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Madman
-                                
-                            </span>
-                        </div>
+        <!-- 养护知识 -->
+        <section id="knowledge" class="knowledge">
+            <h2 class="section-title">汽车养护知识</h2>
+            <div class="knowledge-grid">
+                <div class="knowledge-card">
+                    <div class="knowledge-image">
+                        <img src="/img/knowledge1.png" alt="机油更换周期">
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/car/">
-                            <span class="chip bg-color">car</span>
-                        </a>
-                        
+                    <div class="knowledge-content">
+                        <h3>机油更换周期指南</h3>
+                        <p>了解不同车型和驾驶条件下的机油更换周期，延长发动机寿命</p>
                     </div>
-                    
+                </div>
+                <div class="knowledge-card">
+                    <div class="knowledge-image">
+                        <img src="/img/knowledge2.png" alt="轮胎保养">
+                    </div>
+                    <div class="knowledge-content">
+                        <h3>轮胎保养与安全检查</h3>
+                        <p>掌握轮胎日常检查要点，确保行车安全与燃油经济性</p>
+                    </div>
+                </div>
+                <div class="knowledge-card">
+                    <div class="knowledge-image">
+                        <img src="/img/knowledge3.png" alt="电瓶维护">
+                    </div>
+                    <div class="knowledge-content">
+                        <h3>汽车电瓶维护技巧</h3>
+                        <p>学会识别电瓶老化迹象，避免车辆无法启动的尴尬情况</p>
+                    </div>
+                </div>
+                <div class="knowledge-card">
+                    <div class="knowledge-image">
+                        <img src="/img/knowledge4.png" alt="刹车系统">
+                    </div>
+                    <div class="knowledge-content">
+                        <h3>刹车系统检查要点</h3>
+                        <p>了解刹车片、刹车盘和刹车液的检查周期与更换标准</p>
+                    </div>
+                </div>
+                <div class="knowledge-card">
+                    <div class="knowledge-image">
+                        <img src="/img/knowledge5.png" alt="空调系统">
+                    </div>
+                    <div class="knowledge-content">
+                        <h3>汽车空调系统保养</h3>
+                        <p>掌握空调系统清洁与维护方法，确保夏季行车舒适度</p>
+                    </div>
+                </div>
+                <div class="knowledge-card">
+                    <div class="knowledge-image">
+                        <img src="/img/knowledge6.png" alt="冬季保养">
+                    </div>
+                    <div class="knowledge-content">
+                        <h3>高原地区冬季汽车保养</h3>
+                        <p>针对拉萨高原气候特点，提供冬季汽车保养专业建议</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2025/08/11/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="关于我们">
-                            
-                            <span class="card-title">关于我们</span>
-                        </div>
-                    </a>
+        </section>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                拉萨市城关区众驰汽车维修店专业汽车服务 · 诚信经营 · 客户至上
-关于我们众驰汽车维修店位于西藏拉萨市城关区核心区域，是一家集汽车维修、保养、检测于一体的综合性汽车服务企业。我们致力于为车主提供高效、可靠、实惠的汽车养护解决方案。
-服务项
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-08-11
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Madman
-                                
-                            </span>
-                        </div>
-                    </div>
+        <!-- 统计信息 -->
+        <section class="stats">
+            <p>网站访问总人数: <span id="busuanzi_value_site_uv">0</span> | 网页点击量: <span id="busuanzi_value_page_pv">0</span></p>
+        </section>
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/About/">
-                            <span class="chip bg-color">About</span>
-                        </a>
-                        
+        <!-- 联系我们 -->
+        <section id="contact">
+            <h2 class="section-title">联系我们</h2>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p style="margin-bottom: 2rem;">如果您有任何关于汽车养护的问题或需要预约服务，请随时联系我们</p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">联系信息</h3>                       
+                        <p><i class="fas fa-mobile-alt" style="margin-right: 10px;"></i> 手机: 暂未提供</p>
+                        <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 地址: 拉萨市城关区加荣路朗赛一期一区铺面</p>
                     </div>
-                    
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">营业时间</h3>
+                        <p>周一至周日: 6:00 - 23:00</p>
+                        <p>紧急救援: 24小时服务</p>
+                    </div>
                 </div>
             </div>
-            
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">首页</a>
+                <a href="#services">服务项目</a>
+                <a href="#location">店铺位置</a>
+                <a href="#knowledge">养护知识</a>
+                <a href="#contact">联系我们</a>
+            </div>
+       <!-- <p>备案号: 藏网备ICP88888888</p> -->          
+            <p>&copy; 2025 拉萨市众驰汽车养护中心</p>
         </div>
-    </article>
+    </footer>
 
-</main>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-    <div class="container row center-align" style="margin-bottom: 15px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2025</span>
-            
-            <span id="year">2025</span>
-            <a href="/about" target="_blank">Madman</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-            <br>
-            
-            <span id="sitetime">载入运行时间...</span>
-            <script>
-                function siteTime() {
-                    var seconds = 1000;
-                    var minutes = seconds * 60;
-                    var hours = minutes * 60;
-                    var days = hours * 24;
-                    var years = days * 365;
-                    var today = new Date();
-                    var startYear = "2025";
-                    var startMonth = "8";
-                    var startDate = "11";
-                    var startHour = "0";
-                    var startMinute = "0";
-                    var startSecond = "0";
-                    var todayYear = today.getFullYear();
-                    var todayMonth = today.getMonth() + 1;
-                    var todayDate = today.getDate();
-                    var todayHour = today.getHours();
-                    var todayMinute = today.getMinutes();
-                    var todaySecond = today.getSeconds();
-                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                    var diff = t2 - t1;
-                    var diffYears = Math.floor(diff / years);
-                    var diffDays = Math.floor((diff / days) - diffYears * 365);
-                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
-                        minutes);
-                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
-                        diffMinutes * minutes) / seconds);
-                    if (startYear == todayYear) {
-                        document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
-                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    } else {
-                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
-                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    }
-                }
-                setInterval(siteTime, 1000);
-            </script>
-            
-            <br>
-            
+    <!-- 公告弹窗 -->
+    <!-- <div class="announcement-modal" id="announcement">
+        <div class="modal-header">
+            <h3>欢迎访问</h3>
+            <button class="close-modal" id="close-announcement">&times;</button>
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+        <div class="modal-content">
+            <p>尊敬的客户：</p>
+            <p>可享受免费换机油服务！</p>
+            <p>欢迎提前预约，避免排队等候。</p>
+        </div>
+    </div> -->
+    <!-- 悬浮按钮 -->
+    <div class="floating-buttons">
+        <div class="floating-button" id="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        <div class="floating-button" id="wechat-button">
+            <i class="fab fa-weixin"></i>
+        </div>
+        <div class="wechat-modal" id="wechat-modal">
+            <p>添加店主微信</p>
+            <img src="/img/zc.png" alt="店主微信二维码">
+        </div>
     </div>
-</footer>
 
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
         });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-	
-    
-
-    
-
-    
-    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
+        // 幻灯片功能
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        // 自动切换幻灯片
+        setInterval(nextSlide, 5000);
+        
+        // 移动端菜单切换
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // 导航到店功能
+        document.getElementById('nav-button').addEventListener('click', function() {
+            const shopLocation = "拉萨市城关区加荣路朗赛一期一区铺面";
+            const latitude = 91.147218; // 示例坐标
+            const longitude = 29.669526; // 示例坐标
+            
+            // 在实际应用中，这里应该调用高德地图API
+            // 这里仅模拟导航选择
+            const navApp = prompt("请选择导航应用: 1.苹果地图 2.高德地图 3.百度地图 4.腾讯地图", "2");
+            
+            switch(navApp) {
+                case "1":
+                    window.open(`http://maps.apple.com/?q=${shopLocation}`);
+                    break;
+                case "2":
+                    window.open(`https://uri.amap.com/navigation?to=${shopLocation}&callnative=1`);
+                    break;
+                case "3":
+                    window.open(`https://api.map.baidu.com/direction?destination=${shopLocation}&mode=driving&region=拉萨&output=html`);
+                    break;
+                case "4":
+                    window.open(`https://apis.map.qq.com/uri/v1/routeplan?type=drive&to=${shopLocation}&referer=myapp`);
+                    break;
+                default:
+                    window.open(`https://uri.amap.com/navigation?to=${shopLocation}&callnative=1`);
+            }
+        });
+        
+        // 返回顶部功能
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // 微信二维码显示
+        document.getElementById('wechat-button').addEventListener('click', function() {
+            document.getElementById('wechat-modal').classList.toggle('active');
+        });
+        
+        // 公告弹窗
+        document.addEventListener('DOMContentLoaded', function() {
+            // 模拟后台配置开启公告
+            const showAnnouncement = true; // 这里可以改为从后台获取配置
+            
+            if (showAnnouncement) {
+                setTimeout(() => {
+                    document.getElementById('announcement').classList.add('active');
+                }, 2000);
+            }
+            
+            document.getElementById('close-announcement').addEventListener('click', function() {
+                document.getElementById('announcement').classList.remove('active');
+            });
+        });
+        
+        // 模拟不蒜子统计
+        document.addEventListener('DOMContentLoaded', function() {
+            // 这里应该是调用不蒜子统计API
+            // 模拟数据
+            document.getElementById('busuanzi_value_site_uv').textContent = Math.floor(Math.random() * 100);
+            document.getElementById('busuanzi_value_page_pv').textContent = Math.floor(Math.random() * 5000);
+        });
+        
+        // 初始化地图
+        function initMap() {
+            // 在实际应用中，这里应该调用高德地图API
+            // 这里仅创建占位地图
+            const mapContainer = document.getElementById('map');
+            mapContainer.innerHTML = `
+                <div style="width:100%;height:100%;background:#1a2b4c;display:flex;align-items:center;justify-content:center;color:white;">
+                    <div style="text-align:center;">
+                        <i class="fas fa-map-marker-alt" style="font-size:3rem;margin-bottom:1rem;"></i>
+                        <p>拉萨市众驰汽车养护中心</p>
+                        <p>拉萨市城关区加荣路朗赛一期一区六号铺面</p>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // 页面加载完成后初始化地图
+        window.onload = initMap;
+    </script>
 </body>
-
 </html>
