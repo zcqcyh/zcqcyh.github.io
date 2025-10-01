@@ -8,6 +8,7 @@
     <meta name="keywords" content="轮胎维修,免费换机油,更换电瓶,紧急救援,拉萨汽车保养,众驰汽车养护">
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <script async src="http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <style>
         :root {
             --primary-color: #1a2b4c; /* 深蓝 */
@@ -74,7 +75,7 @@
         }
 
         .logo h1 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
         }
 
@@ -111,8 +112,8 @@
         }
 
         section {
-            padding: 5rem 10%;
-            min-height: 100vh;
+            padding: 4rem 10%;
+            min-height: 6vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -131,13 +132,13 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 60%;
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231a2b4c" width="1200" height="800"/><path fill="%232c3e50" d="M0,0 L1200,800 L0,800 Z"/></svg>') no-repeat center center/cover;
             z-index: -1;
         }
 
         .hero h2 {
-            font-size: 3rem;
+            font-size: 1.5rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
@@ -265,12 +266,15 @@
 
         /* 地图样式 */
         .map-container {
-            height: 400px;
+            height: 300px;
             border-radius: 15px;
             overflow: hidden;
             box-shadow: var(--shadow);
-            margin: 2rem 0;
+            margin: 10px;
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         #map {
@@ -351,18 +355,18 @@
         /* 统计样式 */
         .stats {
             text-align: center;
-            padding: 3rem 10%;
+            padding: 1rem 10%;
             background: var(--dark-color);
         }
 
         .stats p {
-            font-size: 1.2rem;
+            font-size: 0.8rem;
         }
 
         /* 页脚样式 */
         footer {
             background: var(--primary-color);
-            padding: 3rem 10%;
+            padding: 2rem 10%;
             text-align: center;
         }
 
@@ -552,14 +556,14 @@
     <header id="header">
         <div class="logo">
             <img src="/img/logo.png" alt="拉萨市众驰汽车养护中心">
-            <h1>众驰汽车养护</h1>
+            <h1>拉萨市众驰汽车养护中心</h1>
         </div>
         <ul class="nav-links">
-            <li><a href="#home">首页</a></li>
+            <li><a href="/">首页</a></li>
             <li><a href="#services">服务项目</a></li>
             <li><a href="#location">店铺位置</a></li>
             <li><a href="#knowledge">养护知识</a></li>
-            <li><a href="#contact">联系我们</a></li>
+            <li><a href="/about">关于我们</a></li>
         </ul>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
@@ -666,10 +670,11 @@
 
         <!-- 店铺位置 -->
         <section id="location">
-            <h2 class="section-title">店铺位置</h2>
-            <p style="text-align: center; margin-bottom: 2rem;">拉萨市城关区加荣路朗赛一期一区铺面</p>
+  <!--          <h2 class="section-title">店铺位置</h2>-->
+            <p style="text-align: center; margin-bottom: 1.5rem;">拉萨市城关区加荣路朗赛一期一区六号铺面</p>
             <div class="map-container">
-                <div id="map" ></div>
+            <img src="/img/dw.png" alt="拉萨市众驰汽车养护中心">
+                <div id="map" ></div>           
                 <button class="navigation-button" id="nav-button">导航到店</button>
             </div>
         </section>
@@ -737,24 +742,21 @@
 
         <!-- 统计信息 -->
         <section class="stats">
-            <p>网站访问总人数: <span id="busuanzi_value_site_uv">0</span> | 网页点击量: <span id="busuanzi_value_page_pv">0</span></p>
+            <p>网站访问总人数: <span id="busuanzi_value_site_uv"></span> | 网页点击量: <span id="busuanzi_value_site_pv"></span></p>
         </section>
-
         <!-- 联系我们 -->
         <section id="contact">
-            <h2 class="section-title">联系我们</h2>
             <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <p style="margin-bottom: 2rem;">如果您有任何关于汽车养护的问题或需要预约服务，请随时联系我们</p>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
-                    <div style="flex: 1; min-width: 250px;">
-                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">联系信息</h3>                       
-                        <p><i class="fas fa-mobile-alt" style="margin-right: 10px;"></i> 手机: 暂未提供</p>
-                        <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 地址: 拉萨市城关区加荣路朗赛一期一区铺面</p>
+                    <div style="flex: 1; min-width: 400px;">
+ <!--                       <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">联系信息</h3>                       
+                         <p><i class="fas fa-mobile-alt" style="margin-right: 10px;"></i> 手机: 暂未提供</p>-->
+                        <p><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 地址: 拉萨市城关区加荣路朗赛一期一区六号铺面</p>
                     </div>
-                    <div style="flex: 1; min-width: 250px;">
-                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">营业时间</h3>
-                        <p>周一至周日: 6:00 - 23:00</p>
-                        <p>紧急救援: 24小时服务</p>
+                    <div style="flex: 1; min-width: 400px;">
+ <!--                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">营业时间</h3>-->
+                        <p>正常营业时间: 6:00 - 23:00</p>
+                        <p>24小时服务紧急救援服务</p>
                     </div>
                 </div>
             </div>
@@ -764,20 +766,20 @@
     <!-- 页脚 -->
     <footer>
         <div class="footer-content">
-            <div class="footer-links">
+   <!--            <div class="footer-links">
                 <a href="#home">首页</a>
                 <a href="#services">服务项目</a>
                 <a href="#location">店铺位置</a>
                 <a href="#knowledge">养护知识</a>
                 <a href="#contact">联系我们</a>
             </div>
-       <!-- <p>备案号: 藏网备ICP88888888</p> -->          
+               <p>备案号: 藏网备ICP88888888</p> -->          
             <p>&copy; 2025 拉萨市众驰汽车养护中心</p>
         </div>
     </footer>
 
     <!-- 公告弹窗 -->
-    <!-- <div class="announcement-modal" id="announcement">
+<div class="announcement-modal" id="announcement">
         <div class="modal-header">
             <h3>欢迎访问</h3>
             <button class="close-modal" id="close-announcement">&times;</button>
@@ -787,9 +789,8 @@
             <p>可享受免费换机油服务！</p>
             <p>欢迎提前预约，避免排队等候。</p>
         </div>
-    </div> -->
     <!-- 悬浮按钮 -->
-    <div class="floating-buttons">
+<div class="floating-buttons">
         <div class="floating-button" id="back-to-top">
             <i class="fas fa-arrow-up"></i>
         </div>
@@ -840,7 +841,7 @@
         
         // 导航到店功能
         document.getElementById('nav-button').addEventListener('click', function() {
-            const shopLocation = "拉萨市城关区加荣路朗赛一期一区铺面";
+            const shopLocation = "拉萨市城关区加荣路朗赛一期一区六号铺面";
             const latitude = 91.147218; // 示例坐标
             const longitude = 29.669526; // 示例坐标
             
@@ -853,10 +854,10 @@
                     window.open(`http://maps.apple.com/?q=${shopLocation}`);
                     break;
                 case "2":
-                    window.open(`https://uri.amap.com/navigation?to=${shopLocation}&callnative=1`);
+                    window.open(`https://surl.amap.com/kOp4oKpS9zN`);
                     break;
                 case "3":
-                    window.open(`https://api.map.baidu.com/direction?destination=${shopLocation}&mode=driving&region=拉萨&output=html`);
+                    window.open(`https://j.map.baidu.com/9f/c_Bk`);
                     break;
                 case "4":
                     window.open(`https://apis.map.qq.com/uri/v1/routeplan?type=drive&to=${shopLocation}&referer=myapp`);
@@ -879,7 +880,7 @@
         // 公告弹窗
         document.addEventListener('DOMContentLoaded', function() {
             // 模拟后台配置开启公告
-            const showAnnouncement = true; // 这里可以改为从后台获取配置
+            const showAnnouncement = false; // 这里可以改为从后台获取配置
             
             if (showAnnouncement) {
                 setTimeout(() => {
@@ -890,14 +891,6 @@
             document.getElementById('close-announcement').addEventListener('click', function() {
                 document.getElementById('announcement').classList.remove('active');
             });
-        });
-        
-        // 模拟不蒜子统计
-        document.addEventListener('DOMContentLoaded', function() {
-            // 这里应该是调用不蒜子统计API
-            // 模拟数据
-            document.getElementById('busuanzi_value_site_uv').textContent = Math.floor(Math.random() * 100);
-            document.getElementById('busuanzi_value_page_pv').textContent = Math.floor(Math.random() * 5000);
         });
         
         // 初始化地图

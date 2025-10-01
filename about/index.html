@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们-拉萨市城关区众驰汽车养护中心</title>
+    <meta name="description" content="拉萨市城关区众驰汽车维修店|专业团队和服务理念，我们致力于为您的爱车提供最专业的呵护。">
+    <meta name="keywords" content="关于我们,众驰汽车养护,发展历程,专业团队,服务理念">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a2b4c;
+            --secondary-color: #e67e22;
+            --accent-color: #e74c3c;
+            --light-color: #f5f7fa;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --text-light: #fff;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* 导航栏样式 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            background: var(--glass-bg);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        header.scrolled {
+            background: rgba(26, 43, 76, 0.9);
+            box-shadow: var(--shadow);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover {
+            background: var(--secondary-color);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* 主内容区域 */
+        main {
+            margin-top: 70px;
+        }
+
+        section {
+            padding: 5rem 10%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* 关于我们页面样式 */
+        .about-section {
+            background: var(--light-color);
+            color: var(--text-color);
+        }
+
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .main-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .main-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 4px;
+            background: var(--secondary-color);
+            border-radius: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .about-text {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--text-light);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-icon {
+            background: var(--primary-color);
+            color: var(--text-light);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background: var(--primary-color);
+            padding: 3rem 10%;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* 悬浮按钮 */
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .floating-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--secondary-color);
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+        }
+
+        .floating-button:hover {
+            background: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .wechat-modal {
+            position: absolute;
+            bottom: 60px;
+            right: 0;
+            background: var(--text-light);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: none;
+            color: var(--text-color);
+        }
+
+        .wechat-modal.active {
+            display: block;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--primary-color);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                transition: var(--transition);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 1.5rem 0;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            section {
+                padding: 3rem 5%;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.3rem;
+            }
+
+            .about-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header id="header">
+        <div class="logo" herf="../">
+            <img src="/img/logo.png" >
+            <h1>拉萨市众驰汽车养护中心</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../404.html">服务项目</a></li>
+            <li><a href="../404.html">店铺位置</a></li>
+            <li><a href="/">关于我们</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- 主内容区域 -->
+    <main>
+        <!-- 关于我们 -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-content">
+                    <h1 class="main-title">关于众驰汽车养护中心</h1>
+                    <h2 class="subtitle">专业呵护，让每一程都更安心</h2>
+                    
+                    <div class="about-text">
+                        <p>**专业汽车服务 · 诚信经营 · 客户至上**</p>
+                    </div>
+                    <div class="about-text">
+                        <p>拉萨市众驰汽车养护中心成立于2025年，位于城关区核心区域，是一家集汽车维修、保养、检测于一体的综合性汽车服务企业。我们致力于为车主提供高效、可靠、实惠的汽车养护解决方案。</p>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p>凭借多年的行业经验和专业技术团队，我们建立了完善的服务体系，从日常保养到紧急救援，从轮胎维修到电瓶更换，我们始终坚持以客户为中心，提供最优质的服务体验。</p>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p>我们的使命是让每一位客户都能享受到专业、可靠、高效的汽车养护服务，让您的爱车始终保持最佳状态，让您的高原之旅畅通无阻。</p>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <!-- 使用占位图片，实际使用时请替换为真实图片 -->
+                    <div style="width:100%;height:400px;background:linear-gradient(45deg, var(--primary-color), var(--dark-color));display:flex;align-items:center;justify-content:center;color:white;">
+                        <div style="text-align:center;">
+                        <img src="../img/1.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>专业团队</h3>
+                    <p>拥有专业技师团队，确保服务质量。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>先进设备</h3>
+                    <p>采用前沿先进的检测和维修设备，确保每一辆车的维修质量和效率。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>贴心服务</h3>
+                    <p>提供24小时紧急救援服务，随时解决您的行车困扰。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>品质保证</h3>
+                    <p>使用原厂或同等品质的配件，提供完善的质量保证，让您放心使用。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+   <!--            <div class="footer-links">
+                <a href="#home">首页</a>
+                <a href="#services">服务项目</a>
+                <a href="#location">店铺位置</a>
+                <a href="#knowledge">养护知识</a>
+                <a href="#contact">联系我们</a>
+            </div>
+               <p>备案号: 藏网备ICP88888888</p> -->          
+            <p>&copy; 2025 拉萨市众驰汽车养护中心</p>
+        </div>
+    </footer>
+
+     <!-- 悬浮按钮 -->
+    <div class="floating-buttons">
+        <div class="floating-button" id="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        <div class="floating-button" id="wechat-button">
+            <i class="fab fa-weixin"></i>
+        </div>
+        <div class="wechat-modal" id="wechat-modal">
+            <p>添加店主微信</p>
+            <img src="/img/zc.png" alt="店主微信二维码">
+        </div>
+    </div>
+
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // 移动端菜单切换
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // 返回顶部功能
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // 微信二维码显示
+        document.getElementById('wechat-button').addEventListener('click', function() {
+            document.getElementById('wechat-modal').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
